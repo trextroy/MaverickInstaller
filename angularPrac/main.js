@@ -38,14 +38,16 @@ var myapp = angular.module("myapp",[]);
 			template: "<div style='border: 3px solid black'>Hello</div>",
 			link: function (scope, iElement, iAttrs, ctrl) {
 				//this 'ctrl' can access everything you set at TechsController function. 
+				//this 'ctrl' you can use if if you get if from another directive. 
 				 iElement.on('click', function(e) {
 				 	console.log('element clicked');
 				 	console.log(iAttrs.title);
 				 	$http
 				      .get('json/techs.json')
 				      .then(function (response) {
-				        scope.alltechs = response.data;
-				        console.log(ctrl);
+				        scope.alltechs = response.data; // set the service value in scope. 
+				        console.log(ctrl); // ctrl.techs - you can set the service value in controller variable. 
+				        alert('info display');
 				      });
 		          e.stopPropagation(); //stop event from bubbling up to document object
 		         });
@@ -64,8 +66,12 @@ var myapp = angular.module("myapp",[]);
     $http
       .get('json/techs.json')
       .then(function (response) {
+      	//setting the value in scope
         $scope.techs = response.data; // this scope will share the data inside the link onclick function.
-        vm.techs = response.data;
+        //setting the value in controller variable. We should not do this as data should go in scope.
+        //however we can define diff methods here which can be useful in link. 
+        //this is usuefule perticularly when two directives are sharing the controller. 
+        vm.techs = response.data; // this is where we creating new techs variable inside controller function. 
       });
   };
 
