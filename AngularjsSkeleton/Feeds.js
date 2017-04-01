@@ -1,18 +1,9 @@
-var myapp = angular.module("myapp",[]);
-
-(function(app){
+(function(){
 	'use strict';
 
-	app.directive('clock', [function () {
-		return {
-			restrict: 'E',
-			scope:{
-				timezone:"@",
-			},
-			template:"<div>12pm {{timezone}}</div>"
-		};
-	}]);
+angular
+	.module("myapp",['ui.router']);
 
 
+})();
 
-})(myapp);
