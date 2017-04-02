@@ -9,7 +9,8 @@ var myapp = angular.module("myapp",[]);
 			scope:{
 				timezone:"@",
 			},
-			template:"<div>12pm {{timezone}}</div>"
+			/*template:"<div>12pm {{timezone}}</div>"*/
+			templateUrl:"sampletemplate.html"
 		};
 	}]);
 

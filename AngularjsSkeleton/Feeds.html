@@ -9,11 +9,17 @@
 
 <body ng-app="myapp">
 
-	<div class="mainContainer">
-		
-		
-			 <div>hello</div>
-			 <clock timezone='EST'> </clock>
+	<div class="mainContainer col-md-12">
+			 <headercomp  class="col-md-12"></headercomp>
+
+			 <div class="mainViewContainer col-md-12">
+				    <div ui-view></div>
+			</div>
+
+
+			 <div class="col-md-6" >hello</div>
+			 <clock class="col-md-6" timezone='EST'> </clock>
+			 <footercomp></footercomp>
 	</div>
 
 
@@ -22,7 +28,13 @@
 <script type="text/javascript" src="assets/angular-route.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
 <script type="text/javascript" src="Feeds.js"></script>
+<script type="text/javascript" src="Feeds.run.js"></script>
+<script type="text/javascript" src="Feeds.route.js"></script>
 <script type="text/javascript" src="components/clock.js"></script>
+<script type="text/javascript" src="views/footer/footer.js"></script>
+<script type="text/javascript" src="views/header/header.js"></script>
+<script type="text/javascript" src="views/main/main.controller.js"></script>
+
 
 </body>
 </html>
