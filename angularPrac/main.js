@@ -76,6 +76,10 @@ var myapp = angular.module("myapp",[]);
       });
   };
 
-
-
+ /*
+ 	require: "fooController", this kind of this inside the directive can use the controller from another directive. 
+	http://jsfiddle.net/YGQT9/
+	http://jsfiddle.net/vojtajina/js64b/14/
+	http://plnkr.co/edit/IOccnZq2LLnwje7T9sxo?p=preview
+*/
 })(myapp);
