@@ -83,5 +83,9 @@ var myapp = angular.module("myapp",[]);
 	http://plnkr.co/edit/IOccnZq2LLnwje7T9sxo?p=preview
 	http://jsfiddle.net/TahmidTanzim/N9Vqk/
 	https://codepen.io/PageOnline/pen/nCfAj
+	http://blog.pdsullivan.com/posts/2014/10/06/api-angularjs-tutorial.html
+	
+	http://stackoverflow.com/questions/17643361/ngrepeat-limiting-number-of-displayed-results
+
 */
 })(myapp);
