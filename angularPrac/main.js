@@ -81,5 +81,7 @@ var myapp = angular.module("myapp",[]);
 	http://jsfiddle.net/YGQT9/
 	http://jsfiddle.net/vojtajina/js64b/14/
 	http://plnkr.co/edit/IOccnZq2LLnwje7T9sxo?p=preview
+	http://jsfiddle.net/TahmidTanzim/N9Vqk/
+	https://codepen.io/PageOnline/pen/nCfAj
 */
 })(myapp);
