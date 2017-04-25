@@ -12,6 +12,12 @@ import { Login, LoginService } from './login.service'
   `
 })
 
-export class LoginComponent {
+export class LoginComponent implements OnInit {
+	constructor(){
 
+	}
+
+	ngOnInit(){
+     //called after the constructor and called  after the first ngOnChanges() 
+  }
 }
