@@ -36,8 +36,15 @@
 
 
 			<div id="panelGroupDiv row" >
-			 	<pre ng-model="panelList"></pre>
-			 	
+			 	<!-- <ul>
+					<li ng-repeat="panel in panelList"> {{ panel.title }} </li>
+				</ul> -->
+
+				<div>
+					<div ng-repeat="panel in panelList"> 
+						<checkboxcomp titleval="{{panel.title}}" descval="{{panel.desc}}"></checkboxcomp>
+					</div>
+				</div>
 			 </div>
 
 
