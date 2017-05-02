@@ -24,12 +24,13 @@
 				restrict: 'E',
 				scope:{
 					titleval:"@",//this is passing everything in the form of string instead of object
-					descval:"@"
+					descval:"@",
+					onRemove:"&"
 				},
 				//template:"<div>Title: {{titleval}} and its description: {{descval}}</div>",
-				template:"<div class='panel panel-success'>" +
+				template:"<div class='panel panel-success dirParentStyle'>" +
 						    "<div class='panel-heading'>" +
-						         "<h3 class='panel-title'>{{titleval}}</h3>" +
+						         "<h3 class='panel-title pull-left'>{{titleval}}</h3>  <button ng-click='onRemove()' class='btn btn-default pull-right'>Cancel</button> <div class='clearfix'></div>" +
 						    "</div>" +
 						    "<div class='panel-body'>{{descval}}</div>" +
 						"</div>",
